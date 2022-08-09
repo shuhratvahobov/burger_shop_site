@@ -1,0 +1,115 @@
+@font-face {
+	font-family: "ProximaNova";
+	font-style: normal;
+	font-weight: normal;
+	src:
+		url("../fonts/ProximaNova/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")
+		format("embedded-opentype"),
+		url("../fonts/ProximaNova/ProximaNovaRegular/ProximaNovaRegular.woff")
+		format("woff"),
+		url("../fonts/ProximaNova/ProximaNovaRegular/ProximaNovaRegular.ttf")
+		format("truetype");
+}
+
+@font-face {
+	font-family: "ProximaNovaSimeBold";
+	font-style: normal;
+	font-weight: 600;
+	src:
+		url("../fonts/ProximaNova/ProximaNovaSemibold/ProximaNovaSemibold.eot?#iefix")
+		format("embedded-opentype"),
+		url("../fonts/ProximaNova/ProximaNovaSemibold/ProximaNovaSemibold.woff")
+		format("woff"),
+		url("../fonts/ProximaNova/ProximaNovaSemibold/ProximaNovaSemibold.ttf")
+		format("truetype");
+}
+
+@font-face {
+	font-family: "ProximaNovaBold";
+	font-style: normal;
+	font-weight: 600;
+	src:
+		url("../fonts/ProximaNova/ProximaNovaBold/ProximaNovaBold.eot?#iefix")
+		format("embedded-opentype"),
+		url("../fonts/ProximaNova/ProximaNovaBold/ProximaNovaBold.woff")
+		format("woff"),
+		url("../fonts/ProximaNova/ProximaNovaBold/ProximaNovaBold.ttf")
+		format("truetype");
+}
+
+/*
+@font-face {
+	font-family: "RalewayRegular";
+	font-style: normal;
+	font-weight: normal;
+	src:
+		url("../fonts/Raleway/RalewayRegular/RalewayRegular.eot?#iefix")
+		format("embedded-opentype"),
+		url("../fonts/Raleway/RalewayRegular/RalewayRegular.woff")
+		format("woff"),
+		url("../fonts/Raleway/RalewayRegular/RalewayRegular.ttf")
+		format("truetype");
+}
+@font-face {
+	font-family: "RalewaySemiBold";
+	font-style: normal;
+	font-weight: normal;
+	src:
+		url("../fonts/Raleway/RalewaySemiBold/RalewaySemiBold.eot?#iefix")
+		format("embedded-opentype"),
+		url("../fonts/Raleway/RalewaySemiBold/RalewaySemiBold.woff")
+		format("woff"),
+		url("../fonts/Raleway/RalewaySemiBold/RalewaySemiBold.ttf")
+		format("truetype");
+}
+
+@font-face {
+	font-family: "RalewayBold";
+	font-style: normal;
+	font-weight: normal;
+	src:
+		url("../fonts/Raleway/RalewayBold/RalewayBold.eot?#iefix")
+		format("embedded-opentype"),
+		url("../fonts/Raleway/RalewayBold/RalewayBold.woff")
+		format("woff"),
+		url("../fonts/Raleway/RalewayBold/RalewayBold.ttf")
+		format("truetype");
+}
+
+@font-face {
+	font-family: "SFUIText-Regular";
+	font-style: normal;
+	font-weight: normal;
+	src:
+		url("../fonts/SFUIText/SFUIText-Regular/SFUIText-Regular.eot?#iefix")
+		format("embedded-opentype"),
+		url("../fonts/SFUIText/SFUIText-Regular/SFUIText-Regular.woff")
+		format("woff"),
+		url("../fonts/SFUIText/SFUIText-Regular/SFUIText-Regular.ttf")
+		format("truetype");
+}
+
+@font-face {
+	font-family: "SFUIText-Bold";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/SFUIText/SFUIText-Bold/SFUIText-Bold.eot?#iefix")
+		format("embedded-opentype"),
+		url("../fonts/SFUIText/SFUIText-Bold/SFUIText-Bold.woff")
+		format("woff"),
+		url("../fonts/SFUIText/SFUIText-Bold/SFUIText-Bold.ttf")
+		format("truetype");
+}
+
+@font-face {
+	font-family: "SFUIText-Medium";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/SFUIText/SFUIText-Medium/SFUIText-Medium.eot?#iefix")
+		format("embedded-opentype"),
+		url("../fonts/SFUIText/SFUIText-Medium/SFUIText-Medium.woff")
+		format("woff"),
+		url("../fonts/SFUIText/SFUIText-Medium/SFUIText-Medium.ttf")
+		format("truetype");
+}
+*/

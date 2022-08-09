@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> Feane </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+   
+  </div>
+
+  <!-- food section -->
+
+  <section class="food_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our Menu
+        </h2>
+      </div>
+
+      <ul class="filters_menu">
+        <li class="active" data-filter="*">All</li>
+        <li data-filter=".burger">Burger</li>
+        <li data-filter=".pizza">Pizza</li>
+        <li data-filter=".pasta">Pasta</li>
+        <li data-filter=".fries">Fries</li>
+      </ul>
+
+      <div class="filters-content">
+        <div class="row grid">
+          {% for i in page %}
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              
+              
+              
+                <div class="img-box">
+                  
+                  <img src="{{i.rasmi.url}}" alt="">
+                  
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    {{i.nomi}}
+                  </h5>
+                  <p>
+                    {{i.tarkibi}}
+                  </p>
+                 
+                    
+                     
+                  <div class="">
+                  <hr>
+                  {% if user.is_authenticated %}
+                  <!-- bu qismi js ni kodlari un maxsulot id sini olishimiz mn -->
+                  <button data-product='{{i.id}}' data-action='add' class="btn btn-outline-secondary add-btn update-card" id="button Add to Cartadd">Add to Card
+                  </button>
+                  <a class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModel-{{forloop.counter}}" >View</a>
+                  <h4 style="display: inline-block; float: right;">
+                    <strong>
+                      ${{i.narhi}}
+                    </strong>
+                  </h4> 
+                  {% else %}
+                  <a href="{% url 'login'%}">
+                    <button id="buttonadd">Add to card</button>
+                  </a>
+                  <a class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal-{{ forloop.counter }}">View</a>
+                  <h4 style="display: inline-block; float: right"> <strong>
+                    ${{i.narhi}}
+                  </strong> 
+                </h4>
+                {% endif %}
+                 
+                 </div>
+                  </div>
+                  
+                </div>
+              
+              
+            </div>
+          
+          {% endfor %}
+          </div>
+        </div>
+      </div>
+  <!-- menular tugashi -->
+   <br>
+        <div class="col-md-6">
+            <div class="col-12 my-5">
+              <nav aria-label="Page Navigation">
+                   {% if page.has_previous %}
+                    <a href="{% url 'menu'%}?page={{page.previous_page_number }}"><button type="button">Oldingi sahifa</button></a>
+                      {% endif %} | 
+                      {% if page.has_next %}
+                    <a href="{% url 'menu' %}?page={{page.next_page_number}}"><button type="button">Keyingi sahifa</button></a>
+                      {%endif%}
+                      <style type="text/css">
+                        button{ 
+                              margin-top: 15px;
+                              border: none;
+                              text-transform: uppercase;
+                              display: inline-block;
+                              padding: 10px 55px;
+                              background-color: #ffbe33;
+                              color: #ffffff;
+                              border-radius: 45px;
+                              -webkit-transition: all 0.3s;
+                              transition: all 0.3s;
+                              border: none;
+                        }
+               </style> 
+              </nav>
+            </div>
+               
+    </div>
+    </div>
+  </section>
+  <!-- end food section -->
+
+ 
+{% endblock content %}
